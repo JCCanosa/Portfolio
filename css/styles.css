@@ -1,0 +1,106 @@
+:root{
+    --fuente:'Open Sans', sans-serif;
+    --blanco: #ffffff;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuente);
+    font-size: 1.6rem;
+    line-height: 2;
+    color: var(--blanco);
+    background-color: #001740;
+}
+
+/*Globales*/
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+h1, h2, h3, h4{
+    line-height: 1.2;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+img{
+    max-width: 100%;
+}
+li{
+    list-style: none;
+}
+
+/*Utilidades*/
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+
+.no-webp{
+    background-image: url(../img/fondo-azul.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.header{
+    margin-bottom: 2.5rem;
+}
+
+.fotoPerfil{
+    border-radius: 50%;
+}
+
+.fotoPerfil img{
+    width:  10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+
+
+.navegacion{
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+    max-width: 90%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.presentacion{
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
