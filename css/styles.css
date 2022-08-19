@@ -1,6 +1,10 @@
 :root{
     --fuente:'Open Sans', sans-serif;
     --blanco: #ffffff;
+    --principal: #001740;
+    --secundario: #02225a;
+    --alternativo: #00296f;
+
 }
 
 html{
@@ -60,14 +64,8 @@ li{
     text-align: center;
 }
 
-
-.no-webp{
-    background-image: url(../img/fondo-azul.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
-}
-
 .header{
+    background-color: var(--secundario);
     margin-bottom: 2.5rem;
 }
 
