@@ -1,0 +1,144 @@
+/*Declaracion de variables y reset de la pagina para ajustarla*/
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/*Globales*/
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4{
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+    margin-bottom: 0.4rem;
+    color: white;
+}
+
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 2.1rem;
+}
+
+li{
+    list-style:circle;
+}
+
+.cabecera{
+    text-align: center;
+}
+
+.cabecera h1{
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .infoLateral{
+        position: absolute;
+        width: 280px;
+        height:max-content;
+        padding-right: 15px;
+        border-right: 2px solid white;
+    }
+}
+
+.fotoPerfil{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 115px;
+    margin: 0 auto;
+}
+
+.fotoPerfil img{
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+}
+
+.infoLateral h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.infoLateral section:nth-child(2),
+.infoLateral section:nth-child(4){
+    margin-top: 2.5rem;
+    border-bottom: 1px solid white;
+}
+
+.infoLateral section:nth-child(3), 
+.infoLateral section:nth-child(4){
+    text-align: center;
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    border-bottom: 1px solid white;
+}
+
+.enlaces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 5rem;
+    border-bottom: 1px solid white;
+}
+
+.icono{
+    width: 2rem;
+}
+
+
+@media (min-width: 768px ) {
+    .contenido{
+        position: relative;
+        margin-left: 300px;
+    }  
+}
+
+.lista-proyectos li{
+    list-style: none;
+    font-weight: 700;
+}
+
+.linkIcon{
+    width: 1.2rem;
+    align-items: center;
+}
+
+.anotacion{
+    font-size: 1.2;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
