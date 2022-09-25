@@ -8,60 +8,60 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    
-    <title>Portfolio Juan Carlos Canosa</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Juan Carlos Canosa Portfolio</title>
 </head>
-
 <body>
-    <div class="contenedor">
-        <header class="header centrar-texto">
-            <div class="titulo">
-                <h1 class="header-titulo">Juan Carlos Canosa</h1>
-                <p class="header-texto">Desarrollador web</p>
-            </div>
-
-            <div class="fotoPerfil">
+    <div class="general">
+        <aside class="lateralIzq">
+            <div class="contenidoIzq">
                 <picture>
-                    <source srcset="img/perfil1.avif" type="image/avif">
-                    <source srcset="img/perfil1.webp" type="image/webp">
-                    <img loading="lazy" width="200" height="300" src="img/perfil1.png" alt="foto de perfil">
+                    <source srcset="/img/perfil1.avif" type="image/avif">
+                    <source srcset="/img/perfil1.webp" type="image/webp">
+                    <img loading="lazy" src="/img/perfil1.png" alt="foto perfil">
                 </picture>
+                <p class="nombre">Juan Carlos Canosa</p>
+                <p class="sub-nombre">Desarrollador Web</p>
+                <footer class="footer">
+                    <h3 class="titulo-footer">Contacto</h3>
+                    <div class="iconos-footer">
+                        <a class="icono-footer" href="https://www.linkedin.com/in/juan-carlos-canosa-su%C3%A1rez-a367391b2/" target="_blank"><img src="/img/svg/linkedin.svg"></a>
+                        <a class="icono-footer" href="https://github.com/JCCanosa" target="_blank"><img src="/img/svg/github.svg"></a>
+                        <a class="icono-footer" href="https://www.instagram.com/juankka18/" target="_blank"><img src="/img/svg/instragam.svg"></a>
+                        <a class="icono-footer" href="mailto:jcanosa1988@gmail.com" target="_blank"><img src="/img/svg/email.svg"></a>
+                    </div>
+               </footer>
             </div>
-            <nav class="navegacion">
-                <ul class="no-margin no-padding">
-                    <li><a href="index.html">Presentación</a></li>
-                    <li><a href="formacion.html">Formación</a></li>
-                    <li><a href="proyectos.html">Proyectos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                </ul>
-            </nav>
-        </header>
+        </aside>
 
         <main class="contenido">
-            <p>Hola! Mi nombre es Juan Carlos Canosa y estoy camino de convertirme en desarrollador web.
-                Llevo muchos años trabajando como recambista, pero mi pasión es la tecnología, por eso me estoy 
-                formando para llegar a ser desarrollador web full-stack.
-            </p>
-            <p>
-                Por el momento estoy realizado varios cursos por mi cuenta que podrás ver en la sección de Formación de 
-                esta misma página, entre ellos un CFGS de desarrollo de aplicaciones web en Ilerna, que estoy a punto de 
-                terminar, lo que me llevará a hacer el CFGS de desarrollo multiplataforma.
-            </p>
-            <p>Entre las aptitudes que he podido ir adquiriendo hasta el momento se encuentran, HTML, CSS, PHP, JavaScript, Java, SQL, XML y algún otro lenguaje que forma parte tanto de la formación académica reglada que estoy cursando, como de los cursos que hago por mi cuenta.</p>
-            <p>Muchas gracias por visitar mi página personal, espero que nos veamos muy pronto!</p>
+            <nav class="navegacion">
+                <div class="conjunto-nav">
+                    <a class="enlace-nav" href="/index.html"><img class="icono-nav" src="/img/svg/home.svg"><p id="nav-texto">Inicio</p></a>
+                </div>
+                <div class="conjunto-nav">
+                    <a class="enlace-nav" href="/formacion.html"><img class="icono-nav" src="/img/svg/academic.svg"><p id="nav-texto">Formación</p></a>
+                </div>
+                <div class="conjunto-nav">
+                    <a class="enlace-nav" href="/proyectos.html"><img class="icono-nav" src="/img/svg/gear.svg"><p id="nav-texto">Proyectos</p></a>
+                </div>
+                <div class="conjunto-nav">
+                    <a class="enlace-nav" href="/docs/CV.pdf" target="_blank"><img class="icono-nav" src="/img/svg/cv.svg"><p id="nav-texto">CV</p></a>
+                </div>
+            </nav>
+
+            <h1>Presentación</h1>
+            <p><span class="hola">Hola!</span>  Mi nombre es <span>Juan Carlos Canosa</span> y estoy camino de convertirme en desarrollador web. Llevo muchos años trabajando como recambista, pero mi pasión es la tecnología, por eso me estoy formando para llegar a ser desarrollador web full-stack.</p>
+
+           <p>Por el momento estoy realizado varios cursos por mi cuenta que podrás ver en la sección de <span>Formación</span> de esta misma página, entre ellos un <span>CFGS de desarrollo de aplicaciones web</span> en Ilerna, que estoy a punto de terminar, lo que me llevará a hacer el <span>CFGS de desarrollo multiplataforma</span>.</p>
+
+           <p>Entre las aptitudes que he podido ir adquiriendo hasta el momento se encuentran, <span>HTML</span>, <span>CSS</span>, <span>PHP</span>, <span>JavaScript</span>, <span>Java</span>, <span>SQL</span>, <span>XML</span> y algún otro lenguaje que forma parte tanto de la formación académica reglada que estoy cursando, como de los cursos que hago por mi cuenta.</p>
+
+           <p><span class="cierre">Muchas gracias por visitar mi página personal, espero que nos veamos muy pronto!</span></p>
+
         </main>
 
-        <footer class="header centrar-texto">
-            <h2 class="footer-titulo">Contacto</h2>
-            <div class="contacto">
-                <a class="icono-contacto" href="https://www.instagram.com/juankka18/" target="_blank"><img src="img/instragam.svg" alt="icono instragam"></a>
-                <a class="icono-contacto" href="https://www.linkedin.com/in/juan-carlos-canosa-su%C3%A1rez-a367391b2/" target="_blank"><img src="img/linkedin.svg" alt="icono linkedin"></a>
-                <a class="icono-contacto" href="https://github.com/JCCanosa" target="_blank"><img src="img/github.svg" alt="icono github"></a>
-                <a class="icono-contacto" href="mailto:jcanosa1988@gmail.com" target="_blank"><img src="img/email.svg" alt="icono email"></a>
-            </div>
-        </footer>
+        <aside class="lateralDer"></aside>
     </div>
 </body>
 </html>

@@ -8,50 +8,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    
-    <title>Portfolio Juan Carlos Canosa</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Juan Carlos Canosa Portfolio</title>
 </head>
-
 <body>
-    <div class="contenedor">
-        <header class="header centrar-texto">
-            <div class="titulo">
-                <h1 class="header-titulo">Juan Carlos Canosa</h1>
-                <p class="header-texto">Desarrollador web</p>
-            </div>
-
-            <div class="fotoPerfil">
+    <div class="general">
+        <aside class="lateralIzq">
+            <div class="contenidoIzq">
                 <picture>
-                    <source srcset="img/perfil1.avif" type="image/avif">
-                    <source srcset="img/perfil1.webp" type="image/webp">
-                    <img loading="lazy" width="200" height="300" src="img/perfil1.png" alt="foto de perfil">
+                    <source srcset="/img/perfil1.avif" type="image/avif">
+                    <source srcset="/img/perfil1.webp" type="image/webp">
+                    <img loading="lazy" src="/img/perfil1.png" alt="foto perfil">
                 </picture>
+                <p class="nombre">Juan Carlos Canosa</p>
+                <p class="sub-nombre">Desarrollador Web</p>
+                <footer class="footer">
+                    <h3 class="titulo-footer">Contacto</h3>
+                    <div class="iconos-footer">
+                        <a class="icono-footer" href="https://www.linkedin.com/in/juan-carlos-canosa-su%C3%A1rez-a367391b2/" target="_blank"><img src="/img/svg/linkedin.svg"></a>
+                        <a class="icono-footer" href="https://github.com/JCCanosa" target="_blank"><img src="/img/svg/github.svg"></a>
+                        <a class="icono-footer" href="https://www.instagram.com/juankka18/" target="_blank"><img src="/img/svg/instragam.svg"></a>
+                        <a class="icono-footer" href="mailto:jcanosa1988@gmail.com" target="_blank"><img src="/img/svg/email.svg"></a>
+                    </div>
+               </footer>
             </div>
-            <nav class="navegacion">
-                <ul class="no-margin no-padding">
-                    <li><a href="index.html">Presentación</a></li>
-                    <li><a href="formacion.html">Formación</a></li>
-                    <li><a href="proyectos.html">Proyectos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                </ul>
-            </nav>
-        </header>
+        </aside>
 
         <main class="contenido">
-            <h2>En construcción ...</h2>
+            <nav class="navegacion">
+                <div class="conjunto-nav">
+                    <a class="enlace-nav" href="/index.html"><img class="icono-nav" src="/img/svg/home.svg"><p id="nav-texto">Inicio</p></a>
+                </div>
+                <div class="conjunto-nav">
+                    <a class="enlace-nav" href="/formacion.html"><img class="icono-nav" src="/img/svg/academic.svg"><p id="nav-texto">Formación</p></a>
+                </div>
+                <div class="conjunto-nav">
+                    <a class="enlace-nav" href="/proyectos.html"><img class="icono-nav" src="/img/svg/gear.svg"><p id="nav-texto">Proyectos</p></a>
+                </div>
+                <div class="conjunto-nav">
+                    <a class="enlace-nav" href="/docs/CV.pdf" target="_blank"><img class="icono-nav" src="/img/svg/cv.svg"><p id="nav-texto">CV</p></a>
+                </div>
+            </nav>
+
+            <h1>BienesRaices MVC</h1>
+            <p><span>Aplicación de inmuebles con vista de propiedades y contacto.</span></p>
+            <p>En la <span>página de inicio</span> tenemos un resumen de lo que se ofrece en la web, así como, las <span>3 últimas propiedades agregadas y las 3 últimas entradas de blog</span>. También disponemos de <span>modo oscuro en toda la web con modo automatico de selección del modo dependiendo de la eleccion en el SO</span>.</p> 
+            <p>En la sección Nosotros tenemos un breve resumen sobre la actividad de la empresa en este caso. En Propiedades se <span>listan todas las propiedades disponibles en la base de datos</span> con sus caracteristicas, si clicamos en cualquiera de ellas nos lleva una página con la información de la porpiedad seleccionada.</p>
+            <p>La sección de blog por el momento es estática, el acceso a cualquier entrada del blog lleva a un artículo, en cualquiera de los casos siempre al mismo.</p>
+            <p>Contamos también con <span>sección de contacto</span>, el cual, <span>envía un correo con el mensaje y los campos solicitados al administrador</span>, que tambien tiene <span>área de administración para agregar, eliminar y actualizar las propiedades</span>.</p>
+            <p>Esta aplicación está creada con <span>PHP 8, MVC, JavaScript, SASS y MySql</span> para la base datos. También se hace uso de <span>Composer, Gulp y PHP Mailer</span>.</p>
+            <p><i>(Click para ampliar imagen)</i></p>
+
+            <ul class="galeria-imagenes"></ul>
+
         </main>
 
-        <footer class="header centrar-texto">
-            <h2 class="footer-titulo">Contacto</h2>
-            <div class="contacto">
-                <a class="icono-contacto" href="https://www.instagram.com/juankka18/" target="_blank"><img src="img/instragam.svg" alt="icono instragam"></a>
-                <a class="icono-contacto" href="https://www.linkedin.com/in/juan-carlos-canosa-su%C3%A1rez-a367391b2/" target="_blank"><img src="img/linkedin.svg" alt="icono linkedin"></a>
-                <a class="icono-contacto" href="https://github.com/JCCanosa" target="_blank"><img src="img/github.svg" alt="icono github"></a>
-                <a class="icono-contacto" href="mailto:jcanosa1988@gmail.com" target="_blank"><img src="img/email.svg" alt="icono email"></a>
-            </div>
-        </footer>
+        <aside class="lateralDer"></aside>
     </div>
+    <script src="/js/bienesRaices.js"></script>
 </body>
 </html>

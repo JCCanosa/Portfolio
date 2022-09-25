@@ -8,141 +8,155 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    
-    <title>Portfolio Juan Carlos Canosa</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Juan Carlos Canosa Portfolio</title>
 </head>
-
 <body>
-    <div class="contenedor">
-        <header class="header centrar-texto">
-            <div class="titulo">
-                <h1 class="header-titulo">Juan Carlos Canosa</h1>
-                <p class="header-texto">Desarrollador web</p>
-            </div>
-
-            <div class="fotoPerfil">
+    <div class="general">
+        <aside class="lateralIzq">
+            <div class="contenidoIzq">
                 <picture>
-                    <source srcset="img/perfil1.avif" type="image/avif">
-                    <source srcset="img/perfil1.webp" type="image/webp">
-                    <img loading="lazy" width="200" height="300" src="img/perfil1.png" alt="foto de perfil">
+                    <source srcset="/img/perfil1.avif" type="image/avif">
+                    <source srcset="/img/perfil1.webp" type="image/webp">
+                    <img loading="lazy" src="/img/perfil1.png" alt="foto perfil">
                 </picture>
+                <p class="nombre">Juan Carlos Canosa</p>
+                <p class="sub-nombre">Desarrollador Web</p>
+                <footer class="footer">
+                    <h3 class="titulo-footer">Contacto</h3>
+                    <div class="iconos-footer">
+                        <a class="icono-footer" href="https://www.linkedin.com/in/juan-carlos-canosa-su%C3%A1rez-a367391b2/" target="_blank"><img src="/img/svg/linkedin.svg"></a>
+                        <a class="icono-footer" href="https://github.com/JCCanosa" target="_blank"><img src="/img/svg/github.svg"></a>
+                        <a class="icono-footer" href="https://www.instagram.com/juankka18/" target="_blank"><img src="/img/svg/instragam.svg"></a>
+                        <a class="icono-footer" href="mailto:jcanosa1988@gmail.com" target="_blank"><img src="/img/svg/email.svg"></a>
+                    </div>
+               </footer>
             </div>
-            <nav class="navegacion">
-                <ul class="no-margin no-padding">
-                    <li><a href="index.html">Presentación</a></li>
-                    <li><a href="formacion.html">Formación</a></li>
-                    <li><a href="proyectos.html">Proyectos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="cv.html">CV</a></li>
-                </ul>
-            </nav>
-        </header>
+        </aside>
 
         <main class="contenido">
-            <h2>Proyectos Personales</h2>
-            <div class="proyectos">
-                <div class="proyecto">
+            <nav class="navegacion">
+                <div class="conjunto-nav">
+                    <a class="enlace-nav" href="/index.html"><img class="icono-nav" src="/img/svg/home.svg"><p id="nav-texto">Inicio</p></a>
+                </div>
+                <div class="conjunto-nav">
+                    <a class="enlace-nav" href="/formacion.html"><img class="icono-nav" src="/img/svg/academic.svg"><p id="nav-texto">Formación</p></a>
+                </div>
+                <div class="conjunto-nav">
+                    <a class="enlace-nav" href="/proyectos.html"><img class="icono-nav" src="/img/svg/gear.svg"><p id="nav-texto">Proyectos</p></a>
+                </div>
+                <div class="conjunto-nav">
+                    <a class="enlace-nav" href="/docs/CV.pdf" target="_blank"><img class="icono-nav" src="/img/svg/cv.svg"><p id="nav-texto">CV</p></a>
+                </div>
+            </nav>
+
+            <h1>Proyectos</h1>
+            <p>Proyectos creados durante el aprendizaje de las tecnologías nombradas anteriormente y en la sección de CV. <span>Los proyectos creados con PHP contienen una galería de imagenes del resultado</span>, ya que no estan hospedadas en ningún dominio o servidor.</p>
+
+            <div class="presentacion-proyectos">
+                <div class="imagen-proyecto">
+                    <a href="/appsalon.html">
+                        <picture>
+                            <source srcset="/img/AppSalon/1.webp" type="image/webp">
+                            <img loading="lazy" src="/img/AppSalon/1.png" alt="portada AppSalon">
+                        </picture>
+                        <figcaption>AppSalon</figcaption>
+                    </a>
+                </div>
+
+                <div class="imagen-proyecto">
+                    <a href="/bienesRaices.html">
+                        <picture>
+                            <source srcset="/img/BienesRaices/1.webp" type="image/webp">
+                            <img loading="lazy" src="/img/BienesRaices/1.png" alt="portada BienesRaices">
+                        </picture>
+                        <figcaption>BienesRaices</figcaption>
+                    </a>
+                </div>
+
+                <div class="imagen-proyecto">
                     <a href="https://festivalmusicaejudemy.netlify.app/" target="_blank">
-                        <div class="imagen-proyecto">
-                            <img src="img/festivalMusica.png" alt="Imagen Web Festival Musica">
-                        </div>
-                        <footer>Rock & EDM Festival</footer>
+                        <picture>
+                            <source srcset="/img/festivalMusica.webp" type="image/webp">
+                            <img loading="lazy" src="/img/festivalMusica.png" alt="portada festivalMusica">
+                        </picture>
+                        <figcaption>Festival Música</figcaption>
                     </a>
                 </div>
 
-                <div class="proyecto">
-                    <a href="appSalon.html">
-                        <div class="imagen-proyecto">
-                            <img src="img/AppSalon/index.png" alt="Imagen Web AppSalon">
-                        </div>
-                        <footer>AppSalón MVC</footer>
-                    </a>
-                </div>
-
-                <div class="proyecto">
-                    <a href="bienesRaices.html">
-                        <div class="imagen-proyecto">
-                            <img src="img/BienesRaices/paginaPrincipal.png" alt="Imagen Web BienesRaices">
-                        </div>
-                        <footer>Bienes Raíces</footer>
-                    </a>
-                </div>
-
-                <div class="proyecto">
-                    <a href="https://blogascoffee.netlify.app/">
-                        <div class="imagen-proyecto">
-                            <img src="img/blogCafe.png" alt="Imagen Web blogCafe">
-                        </div>
-                        <footer>Blog Café</footer>
+                <div class="imagen-proyecto">
+                    <a href="https://blogascoffee.netlify.app/" target="_blank">
+                        <picture>
+                            <source srcset="/img/blogCafe.webp" type="image/webp">
+                            <img loading="lazy" src="/img/blogCafe.png" alt="portada blogCafe">
+                        </picture>
+                        <figcaption>Blog Café</figcaption>
                     </a>
                 </div>
                 
-                <div class="proyecto">
-                    <a href="https://tiendabase.netlify.app/">
-                        <div class="imagen-proyecto">
-                            <img src="img/tiendaCamisetas.png" alt="Imagen Web tiendaCamisetas">
-                        </div>
-                        <footer>Tienda Camisetas</footer>
+                <div class="imagen-proyecto">
+                    <a href="https://tributorayden.netlify.app/" target="_blank">
+                        <picture>
+                            <source srcset="/img/tributoRayden.webp" type="image/webp">
+                            <img loading="lazy" src="/img/tributoRayden.png" alt="portada tributoRayden">
+                        </picture>
+                        <figcaption>Página Tributo Rayden</figcaption>
                     </a>
                 </div>
 
-                <div class="proyecto">
-                    <a href="https://landingpage-jbl.netlify.app/">
-                        <div class="imagen-proyecto">
-                            <img src="img/landingPageJbl.png" alt="Imagen Web Landing JBL">
-                        </div>
-                        <footer>Landing JBL</footer>
+                <div class="imagen-proyecto">
+                    <a href="https://landingpage-jbl.netlify.app/" target="_blank">
+                        <picture>
+                            <source srcset="/img/landingPageJbl.webp" type="image/webp">
+                            <img loading="lazy" src="/img/landingPageJbl.png" alt="portada landingPageJbl">
+                        </picture>
+                        <figcaption>Landing Page JBL</figcaption>
                     </a>
                 </div>
 
-                <div class="proyecto">
-                    <a href="https://tributorayden.netlify.app/">
-                        <div class="imagen-proyecto">
-                            <img src="img/tributoRayden.png" alt="Imagen tributoRayden">
-                        </div>
-                        <footer>Página Tributo Rayden</footer>
+                <div class="imagen-proyecto">
+                    <a href="https://tiendabase.netlify.app/" target="_blank">
+                        <picture>
+                            <source srcset="/img/tiendaCamisetas.webp" type="image/webp">
+                            <img loading="lazy" src="/img/tiendaCamisetas.png" alt="portada tiendaCamisetas">
+                        </picture>
+                        <figcaption>Tienda Camisetas</figcaption>
                     </a>
                 </div>
 
-                <div class="proyecto">
-                    <a href="https://docjs.netlify.app/">
-                        <div class="imagen-proyecto">
-                            <img src="img/documentacionJS.png" alt="Imagen Web documentacionJS">
-                        </div>
-                        <footer>Documentación JS</footer>
+                <div class="imagen-proyecto">
+                    <a href="https://docjs.netlify.app/" target="_blank">
+                        <picture>
+                            <source srcset="/img/documentacionJS.webp" type="image/webp">
+                            <img loading="lazy" src="/img/documentacionJS.png" alt="portada documentacionJS">
+                        </picture>
+                        <figcaption>Documentación JS</figcaption>
                     </a>
                 </div>
 
-                <div class="proyecto">
-                    <a href="https://ejemplocontactofreelance.netlify.app/">
-                        <div class="imagen-proyecto">
-                            <img src="img/freelance.png" alt="Imagen Web contactoFreelance">
-                        </div>
-                        <footer>Contacto Freelance</footer>
+                <div class="imagen-proyecto">
+                    <a href="https://ejemplocontactofreelance.netlify.app/" target="_blank">
+                        <picture>
+                            <source srcset="/img/freelance.webp" type="image/webp">
+                            <img loading="lazy" src="/img/freelance.png" alt="portada freelance">
+                        </picture>
+                        <figcaption>Freelance</figcaption>
                     </a>
                 </div>
 
-                <div class="proyecto">
-                    <a href="https://encprogramacion.netlify.app/">
-                        <div class="imagen-proyecto">
-                            <img src="img/encuestaProg.png" alt="Imagen Web encprogramacion">
-                        </div>
-                        <footer>Encuesta Programación</footer>
+                <div class="imagen-proyecto">
+                    <a href="https://encprogramacion.netlify.app/" target="_blank">
+                        <picture>
+                            <source srcset="/img/encuestaProg.webp" type="image/webp">
+                            <img loading="lazy" src="/img/encuestaProg.png" alt="portada encuestaProg">
+                        </picture>
+                        <figcaption>Encuesta Lenguajes Programación</figcaption>
                     </a>
                 </div>
             </div>
         </main>
 
-        <footer class="header centrar-texto">
-            <h2 class="footer-titulo">Contacto</h2>
-            <div class="contacto">
-                <a class="icono-contacto" href="https://www.instagram.com/juankka18/" target="_blank"><img src="img/instragam.svg" alt="icono instragam"></a>
-                <a class="icono-contacto" href="https://www.linkedin.com/in/juan-carlos-canosa-su%C3%A1rez-a367391b2/" target="_blank"><img src="img/linkedin.svg" alt="icono linkedin"></a>
-                <a class="icono-contacto" href="https://github.com/JCCanosa" target="_blank"><img src="img/github.svg" alt="icono github"></a>
-                <a class="icono-contacto" href="mailto:jcanosa1988@gmail.com" target="_blank"><img src="img/email.svg" alt="icono email"></a>
-            </div>
-        </footer>
+        <aside class="lateralDer"></aside>
     </div>
 </body>
 </html>
